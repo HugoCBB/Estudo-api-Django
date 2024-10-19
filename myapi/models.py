@@ -22,7 +22,7 @@ class Curso(models.Model):
 
     codigo = models.CharField(max_length=10)
     descricao = models.CharField(max_length=100, blank=False)
-    nivel = models.CharField(max_length=1, blank=False, null=False, default='B')
+    nivel = models.CharField(max_length=1, blank=False, null=False, default='B', choices=NIVEL)
 
 
     def __str__(self):
